@@ -1,13 +1,13 @@
 body {
     margin: 0;
     padding-bottom: 0;
-    /* background-color: rgb(50, 60, 200); */
-    background-image: url("https://i.pinimg.com/originals/25/fe/eb/25feeb265c4900349d68ac1048685836.jpg");
+    background-color: rgb(196, 196, 196);
+    /* background-image: green; */
 }
 
 main {
     position: relative;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(18, 18, 58, .8);
     top: 0;
     bottom: 0;
     width: 60vw;
@@ -21,57 +21,42 @@ main {
 }
 
 #menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 100vw;
-    background-color: black;
+    
 }
 
-#menu > h1 {
-    color: green;
+#menu > h1, #menu-side > h1 {
+    color: white;
 }
 
-#menu > h1 > a {
+#menu > h1 > a, #menu-side > h1 > a {
     text-decoration: none;
-    color: green;
+    color: rgb(231, 62, 62);
 }
 
-#menu > h1 > a:hover {
+#menu > h1 > a:hover, #menu-side > h1 > a:hover {
     color: whitesmoke;
     cursor: pointer;
 }
 
-#menu-side {
+#menu, #menu-side {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
     z-index: 1;
     display: flex;
+    background-color: rgb(18, 18, 58);
+    font-family: sans-serif;
+}
+
+#menu-side {
+    height: 100%;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    background-color: black;
-}
-
-#menu-side > h1 {
-    color: green;
-}
-
-#menu-side > h1 > a {
-    text-decoration: none;
-    color: green;
-}
-
-#menu-side > h1 > a:hover {
-    color: whitesmoke;
-    cursor: pointer;
 }
 
 main > h1 {
@@ -86,14 +71,11 @@ main > h1 {
     padding-right: 10px;
     padding-bottom: 10px;
     padding-top: 3px;
-    /* background-color: rgba(0, 0, 0, .3); */
-    transition-timing-function: cubic-bezier();
-    transition-property: border-radius;
-    transition-duration: 1s;
 }
 
-.card:hover {
-    border-radius: 25px;
+.card > p, .card > ul, .card > ol {
+    font-family: serif;
+    font-size: large;
 }
 
 .card > img {
