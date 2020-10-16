@@ -1,0 +1,39 @@
+form {
+    background-color:  rgba(231, 62, 62, .3);
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 10px 5px 2px black;
+    margin: 10px;
+    border: 1px solid black;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+#signup-forms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button {
+    width: 5vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: rgb(231, 62, 62);
+    cursor: pointer;
+}
+
+.required {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+label {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}

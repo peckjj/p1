@@ -1,10 +1,10 @@
 .calendar {
     width: 100%;
     /* margin-right: 10px; */
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid black;
 }
 
 .month-title {
@@ -20,6 +20,10 @@
     flex-direction: row;
     justify-content: center;
     
+}
+
+.calendar-label > h2 {
+    color: rgb(231, 62, 62);
 }
 
 .calendar-chart {
@@ -47,4 +51,8 @@
 .calendar-chart > div > a, .card > h2 > a {
     text-decoration: none;
     color: rgb(231, 62, 62);
+}
+
+.calendar-chart > div > a:hover, .card > h2 > a:hover {
+    color: whitesmoke;
 }
