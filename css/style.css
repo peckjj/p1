@@ -140,6 +140,7 @@ li {
 @media (max-width: 480px) {
     main {
         width: 80%;
+        animation-name: unset;
     }
 
     #menu {
