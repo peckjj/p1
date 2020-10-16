@@ -8,7 +8,23 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 85%;
+    animation-name: slideFadeTeams;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
  }
+
+ @keyframes slideFadeTeams {
+    0% {
+        position: relative;
+        opacity: 0;
+        width: 0;
+    }
+    99% {
+        opacity: 1;
+        width: 85%;
+    }
+}
 
  .team-card {
     display: flex;
