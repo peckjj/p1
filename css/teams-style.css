@@ -29,6 +29,10 @@
     box-shadow: 10px 5px 5px black;
 }
 
+.team-card > h1 {
+    text-align: center;
+}
+
 .team-card > ul {
     font-family: "Arial Black";
     list-style-type: none;
@@ -77,4 +81,21 @@
 
 #kings:hover {
     background-color: rgba(128, 0, 128, 1);
+}
+
+@media only screen and (max-width: 400px) {
+    .gallery {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 10px;
+    }
+
+    .team-card {
+        width: 90%;
+    }
+
+    main {
+        padding: 0;
+    }
 }

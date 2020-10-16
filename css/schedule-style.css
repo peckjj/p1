@@ -56,3 +56,9 @@
 .calendar-chart > div > a:hover, .card > h2 > a:hover {
     color: whitesmoke;
 }
+
+@media only screen and (max-width: 400px) {
+    .calendar-label {
+        font-size: small;
+    }
+}
